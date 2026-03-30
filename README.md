@@ -1,15 +1,58 @@
 # ima-skills-pro
 
-`ima-skills-pro` 是一个和官方 `ima-skills` 做区分的增强版 skills 套装仓库。
+`ima-skills-pro` 不是官方 skills 的搬运版，而是一个面向真实工作流的增强套装。
 
-它不是对官方 skills 的替代品，而是建立在官方 skills 之上的“软依赖增强包”集合：
+如果说官方 `ima-skills` 解决的是“我能调用 IMA 的笔记和知识库 API”，那么 `ima-skills-pro` 解决的是：
+
+- 我怎么把资料自动收进知识体系
+- 我怎么把零散笔记升级成可检索知识
+- 我怎么批量治理团队知识库
+- 我怎么让 Agent 先检索、再回答、再沉淀
+
+一句话说，官方包更像“基础能力层”，`ima-skills-pro` 更像“可直接使用的工作流层”。
+
+## PRO 版价值
+
+相比官方 `ima-skills`，`ima-skills-pro` 额外提供了 `3` 个增强包和 `9` 个增强子 skill：
+
+- `ima-personal`
+  面向个人知识管理，覆盖收藏、笔记转知识、搜索后行动、个人复盘
+- `ima-team`
+  面向团队知识运营，覆盖批量入库、巡检治理、运营摘要
+- `ima-agent`
+  面向 Agent 工作流，覆盖会话沉淀、检索增强、长期记忆闭环
+
+核心增强点：
+
+- 从“调用 API”升级到“完成工作流”
+- 从“单次操作”升级到“可复用的场景化 skill”
+- 从“基础读写”升级到“个人、团队、Agent 三条产品线”
+
+## 官方包与 PRO 包
+
+`ima-skills-pro` 仍然建立在官方 `ima-skills` 的能力边界之上，是一个“软依赖增强包”套装：
 
 - 官方基础包：[`ima-skills`](https://clawhub.ai/iampennyli/ima-skills)
 - 官方使用说明：如果你要看官方包的安装、配置和基础能力说明，请先看这里：
   [`https://clawhub.ai/iampennyli/ima-skills`](https://clawhub.ai/iampennyli/ima-skills)
 - 当前增强基线：基于官方 `1.2` 版能力边界进行增强设计
 
-`ima-skills-pro` 保留一份与官方兼容的基础包文档，方便和增强包一起维护；但从使用关系上，它依然建议把官方 `ima-skill` 当作基础能力层，再按需接入增强包。
+这意味着：
+
+- 你仍然可以继续使用官方包作为基础层
+- `ima-skills-pro` 不重写官方 OpenAPI
+- `ima-skills-pro` 不引入未公开接口
+- `ima-skills-pro` 重点补足官方包没有覆盖的工作流和产品化体验
+
+## 官方来源
+
+`ima copilot` 是腾讯推出的知识库产品，官网地址：
+
+- https://ima.qq.com/
+
+如果你需要配置 IMA OpenAPI 的 `API Key`，请到这里获取：
+
+- https://ima.qq.com/agent-interface
 
 ## 套装结构
 
