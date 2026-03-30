@@ -26,6 +26,10 @@ metadata:
 
 Unified IMA OpenAPI skill. Currently supports: **notes**, **knowledge-base**.
 
+This repository also contains three optional enhancement packages built on top of the official APIs:
+`ima-personal`, `ima-team`, and `ima-agent`. They are workflow-oriented add-ons and reuse the
+credential model, routing rules, and safety boundaries defined here.
+
 ## Setup
 
 > **Security note:** This skill authenticates with the **official IMA API** (`ima.qq.com`) — the same service the user already uses. Credentials are only sent as HTTP headers to `ima.qq.com` and never to any other domain, file, or log.
